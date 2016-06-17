@@ -25,5 +25,5 @@ func LaunchServer() {
 }
 
 func PrintUsageMessage() {
-	fmt.Println("Usage: ./samp03svr [ports ...]. (Example: ./samp03svr 7771 7772 7773)")
+	fmt.Println("Usage: ./samplaunch [ports ...]. (Example: ./samplaunch 7771 7772 7773)")
 }
