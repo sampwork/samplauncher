@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func StartServer() {
+func LaunchServer() {
 	cmd := exec.Command("samp-server.exe")
 	var out bytes.Buffer
 	cmd.Stdout = &out
@@ -24,6 +24,6 @@ func StartServer() {
 	fmt.Println("Server With Port:", GetServerPort(configFile), "started")
 }
 
-func UsageText() {
+func PrintUsageMessage() {
 	fmt.Println("Usage: samp-server.exe [ports ...]. (Example: samp-server.exe 7771 7772 7773)")
 }
